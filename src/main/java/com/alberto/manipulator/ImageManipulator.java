@@ -221,7 +221,7 @@ public class ImageManipulator implements ImageManipulable {
 			throw new ImageManagerException(ImageManagerException.IMAGE_NULL);
 		}
 
-		if (border < 1) {
+		if (border < 0) {
 			throw new ImageManagerException(
 					ImageManagerException.BORDER_NEGATIVE);
 		}
@@ -242,7 +242,7 @@ public class ImageManipulator implements ImageManipulable {
 			throw new ImageManagerException(ImageManagerException.IMAGE_NULL);
 		}
 
-		if (verticalBorder < 1 || horizontalBorder < 1) {
+		if (verticalBorder < 0 || horizontalBorder < 0) {
 			throw new ImageManagerException(
 					ImageManagerException.BORDER_NEGATIVE);
 		}
@@ -266,8 +266,8 @@ public class ImageManipulator implements ImageManipulable {
 			throw new ImageManagerException(ImageManagerException.IMAGE_NULL);
 		}
 
-		if (topBorder < 1 || bottomBorder < 1 || leftBorder < 1
-				|| rightBorder < 1) {
+		if (topBorder < 0 || bottomBorder < 0 || leftBorder < 0
+				|| rightBorder < 0) {
 			throw new ImageManagerException(
 					ImageManagerException.BORDER_NEGATIVE);
 		}
