@@ -17,7 +17,7 @@ import org.junit.rules.ExpectedException;
 import com.alberto.exceptions.ImageManagerException;
 import com.alberto.interfaces.ImageManipulable;
 
-public class ImageManiulatorTest {
+public class ImageManipulatorTest {
 
 	@Rule
 	public final ExpectedException expectedException = ExpectedException.none();
